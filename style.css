@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: gray;
+  padding: 10px 30px;
+}
+.main-container {
+  height: 100%;
+  display: flex;
+  background-color: aqua;
+  border-radius: 20px;
+}
+
+.pic-name-position-container {
+  padding: 30px;
+
+  color: white;
+  border-radius: 20px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pic-name-position-box {
+  color: white;
+  height: 100%;
+}
+.profile-picture {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: 40px;
+}
+.name {
+  width: 200px;
+}
+.job-position-name {
+  margin-left: 25px;
+  width: 150px;
+}
+.experience-skill-container {
+  border-radius: 20px;
+  width: 70%;
+
+  background-color: white;
+  height: 100%;
+
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+span {
+  color: aqua;
+}
+#experience-box {
+  display: flex;
+  flex-direction: row;
+}
+.skills-title-level-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0 5px 0;
+}
+#years-and-workplace {
+  margin: 0 0 0 100px;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 20%;
+}
+#position-and-description {
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+}
+
+#years-and-workplace div:nth-child(even) {
+  margin-bottom: 10px;
+}
+#position-and-description div:nth-child(even) {
+  margin-bottom: 10px;
+}
+.rights-mobile {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  #years-and-workplace {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .pic-name-position-container {
+    width: 100%;
+  }
+  .experience-skill-container {
+    width: 100%;
+  }
+  .rights {
+    display: none;
+  }
+  .rights-mobile {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #experience-box {
+    font-size: 14px;
+  }
+  #years-and-workplace {
+    margin-right: 20px;
+  }
+  #years-and-workplace:nth-child(even) {
+    margin-top: 30px;
+  }
+}
